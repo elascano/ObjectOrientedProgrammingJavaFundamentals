@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="505.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.espe.cursomicroservicios.cert05gestionligamaven.controlador.LigaControlador">
+   <children>
+      <TitledPane collapsible="false" layoutX="14.0" layoutY="-118.0" prefHeight="518.0" prefWidth="660.0" text="Liga" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-118.0">
+         <content>
+            <AnchorPane prefHeight="381.0" prefWidth="658.0">
+               <children>
+                  <VBox layoutX="37.0" layoutY="31.0">
+                     <children>
+                        <Label layoutX="37.0" layoutY="14.0" text="Nombre:" />
+                        <TextField fx:id="txtNombre" layoutX="37.0" layoutY="40.0" prefHeight="27.0" prefWidth="282.0" promptText="Nombre">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label layoutX="37.0" layoutY="81.0" text="Descripcion:">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextArea fx:id="txtDescripcion" layoutX="37.0" layoutY="98.0" prefHeight="68.0" prefWidth="281.0" promptText="Descripción">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </TextArea>
+                        <Label layoutX="37.0" layoutY="178.0" text="Fecha de Fundación:">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <DatePicker fx:id="dateFecha" layoutX="37.0" layoutY="203.0" style="-fx-background-color: FF00FF;">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </DatePicker>
+                        <HBox>
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#guardar" style="-fx-background-color: FFFF00;" text="Guardar" />
+                              <Button mnemonicParsing="false" onAction="#limpiarForma" text="Cancelar" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <TableView fx:id="tblDatos" layoutX="37.0" layoutY="284.0" prefHeight="233.0" prefWidth="555.0" />
+               </children>
+            </AnchorPane>
+         </content></TitledPane>
+   </children>
+</AnchorPane>

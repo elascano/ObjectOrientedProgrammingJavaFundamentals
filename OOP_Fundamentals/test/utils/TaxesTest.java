@@ -5,6 +5,7 @@
  */
 package utils;
 
+import ec.edu.espe.oop_fundamentals.utils.Tax;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -47,8 +48,6 @@ public class TaxesTest {
         float expResult = 112F;
         float actResult = Math.round(Tax.computeIva(base)*100);
         assertEquals(expResult, actResult, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
     }
     
 }

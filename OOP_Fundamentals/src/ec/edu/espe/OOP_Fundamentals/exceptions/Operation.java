@@ -4,8 +4,8 @@
 package ec.edu.espe.oop_fundamentals.exceptions;
 
 /**
- *
- * @author edisonlascano
+ * 
+ * @author Edisito
  */
 public class Operation {
     

@@ -14,7 +14,4 @@ public class Tax {
         Iva.computeIva(3.4F);
         return base*1.12F;
     }
-
-    
-    
 }

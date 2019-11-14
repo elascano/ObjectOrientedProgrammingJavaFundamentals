@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.oop_fundamentals;
+package ec.edu.espe.OOP_Fundamentals;
 
 import ec.edu.espe.oop_fundamentals.utils.Tax;
 import ec.edu.espe.oop_fundamentals.estatics.Operation;
-import ec.edu.espe.oop_fundamentals.estatics.OperationChild;
+//import ec.edu.espe.oop_fundamentals.estatics.OperationChild;
 import ec.edu.espe.oop_fundamentals.geometricfigures.Circle;
 import ec.edu.espe.oop_fundamentals.geometricfigures.Square;
 import ec.edu.espe.oop_fundamentals.geometricfigures.GeometricFigure;
@@ -102,29 +102,36 @@ public class OOP_Fundamentals {
 
         System.out.println("--> Ejercicio FIGURAS GEOMETRICAS ");
         GeometricFigure squareFigure = new Square(3F);
-        System.out.println("el area de un cuadrado de 3 es --> " + squareFigure.computeArea());
-        System.out.println("el perímetro de un cuadrado de 3 es --> " + squareFigure.computePerimeter());
+        System.out.println("el area de un cuadrado de 3 es --> "
+                + squareFigure.computeArea());
+        System.out.println("el perímetro de un cuadrado de 3 es --> "
+                + squareFigure.computePerimeter());
 
         GeometricFigure circleFigure = new Circle(3F);
-        System.out.println("el area de un círculo de radio 3 es --> " + circleFigure.computeArea());
-        System.out.println("el perímetro de un círculo de radio 3 es --> " + circleFigure.computePerimeter());
+        System.out.println("el area de un círculo de radio 3 es --> "
+                + circleFigure.computeArea());
+        System.out.println("el perímetro de un círculo de radio 3 es --> "
+                + circleFigure.computePerimeter());
 
         GeometricFigure triangleFigure = new Triangle(5, 2.5F, 3, 4, 5);
-        System.out.println("el area del triángulo es --> " + triangleFigure.computeArea());
-        System.out.println("el perímetro del triángulo es --> " + triangleFigure.computePerimeter());
-        System.out.println("el perímetro del triángulo es --> " + triangleFigure.computePerimeter(1F, 2F, 3F));
+        System.out.println("el area del triángulo es --> "
+                + triangleFigure.computeArea());
+        System.out.println("el perímetro del triángulo es --> "
+                + triangleFigure.computePerimeter());
+        System.out.println("el perímetro del triángulo es --> "
+                + triangleFigure.computePerimeter(1F, 2F, 3F));
 
         System.out.println("--> SOBRECARGA");
         System.out.println("before the try");
 
         Animal animal = new Animal();
         System.out.println("Animal --> " + animal.toString());
-        
-        try{
-        animal.eat();
-        }catch(Exception ex) {
-                System.out.println("FFFFFFFFFAAAAAIIIIIIL AND CONTINUUUUUUE -> Animal failed");
-                }
+
+        try {
+            animal.eat();
+        } catch (Exception ex) {
+            System.out.println("FFFFFFFFFAAAAAIIIIIIL AND CONTINUUUUUUE -> Animal failed");
+        }
         Animal horse = new Horse();
         horse.eat();
 
@@ -133,16 +140,16 @@ public class OOP_Fundamentals {
 
         Horse horse2 = new HorsePony();
 
-        try{
-        OOP_Fundamentals.executeCall(animal);
-        OOP_Fundamentals.executeCall(horse);
-        }catch(Exception ex){
+        try {
+            OOP_Fundamentals.executeCall(animal);
+            OOP_Fundamentals.executeCall(horse);
+        } catch (Exception ex) {
             System.out.println("FFFFFFFFFAAAAAIIIIIIL AND CONTINUUUUUUE -> execute calls failed");
         }
 
         System.out.println("--> SOBRECARGA <--");
         animal.eat("cebada");
-        
+
         horse.eat(10);
         horse2.eat("trigo", "cebada");
         horse.eat(new Integer(4));

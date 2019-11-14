@@ -3,7 +3,7 @@
 /** Copyright ESPE-DECC
 */
 
-package ec.edu.espe.oop_fundamentals.constructores2;
+package ec.edu.espe.OOP_Fundamentals.constructores2;
 
 /**
  *

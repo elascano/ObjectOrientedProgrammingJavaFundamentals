@@ -35,14 +35,23 @@ public class Prueba {
 
         Animal animal2 = new Animal();
         animal2.eyes = null;
+        
         try {
+                        System.out.println("trying to eat");
+
             animal2.eat();
-        } catch (Exception ex) {
+        } catch (RuntimeException ex) {
             System.out.println("EL STACKTRACE");
             ex.printStackTrace();
+            System.out.println("LOGGER PROPERTIES" + getClass().getClassLoader().getResource("logging.properties"));
+            System.out.println("EL LOGGER");
+            
+            System.out.println(TestingException.class.getClassLoader().getResource("logging.properties"));
+
             System.out.println("EL LOGGER");
 
             Logger.getLogger(Prueba.class.getName()).log(Level.SEVERE, null, ex+"error de Edison");
+            
             
         }
         System.out.println(" paso el segundo try... ");

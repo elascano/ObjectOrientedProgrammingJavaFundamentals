@@ -90,9 +90,14 @@ public class Operations2 extends OperationsParent {
         Animal animalcc = a == 1 ? c == 3 ? new Animal() : null : null; //this is null        
 
         Animal animal = null;
+        
+        System.out.println("antes del if");
 
         if (animal != null && animal == null & animal.eyes.equals("ooo")) {
             System.out.println(" un doble ampersand");
+        }
+        else {
+            System.out.println("el else del doble ampersand");
         }
 
         //if(animal!=null & animal==null & animal.eyes.equals("ooo")){
